@@ -1,5 +1,5 @@
 {% set name = "name_that_hash" %}
-{% set version = "1.9.0" %}
+{% set version = "1.10.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/name-that-hash-{{ version }}.tar.gz
-  sha256: 77f848196b339ec2ae8dc7f2ec1197401eb7cb9605f880c7813b342251e5cf89
+  sha256: aabe1a3e23f5f8ca1ef6522eb1adcd5c69b5fed3961371ed84a22fc86ee648a2
 
 build:
   number: 0
