@@ -1,7 +1,7 @@
 About name_that_hash
 ====================
 
-Home: https://pypi.org/project/name-that-hash/
+Home: https://nth.skerritt.blog/
 
 Package license: GPL-3.0-only
 
@@ -9,10 +9,9 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/name_that_hash-
 
 Summary: The Modern Hash Identification System
 
-Have you ever come across a hash such as 5f4dcc3b5aa765d61d8327deb882cf99
- and wondered what type of hash that is? Name-that-hash will name that hash
- type!
+Development: https://github.com/HashPals/Name-That-Hash
 
+The Modern Hash Identification System
 
 Current build status
 ====================
