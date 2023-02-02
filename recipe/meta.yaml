@@ -1,5 +1,5 @@
 {% set name = "name_that_hash" %}
-{% set version = "1.10.0" %}
+{% set version = "1.11.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/name-that-hash-{{ version }}.tar.gz
-  sha256: aabe1a3e23f5f8ca1ef6522eb1adcd5c69b5fed3961371ed84a22fc86ee648a2
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 6978a2659ce6d38c330ab8057b78bccac00bc3e87138f2774bec3af2276b0303
 
 build:
   number: 0
@@ -21,12 +21,12 @@ build:
 requirements:
   host:
     - pip
-    - poetry
-    - python >=3.6,<4.0
+    - poetry-core >=1.0.0
+    - python >=3.6.2,<4.0.0
   run:
-    - click >=7.1.2,<9.0.0
-    - python >=3.6,<4.0
-    - rich >=9.9,<11.0
+    - click >=7.1.2
+    - python >=3.6.2,<4.0.0
+    - rich >=11.0.0
 
 test:
   imports:
@@ -39,14 +39,12 @@ test:
     - pip
 
 about:
-  home: https://pypi.org/project/name-that-hash/
+  home: https://nth.skerritt.blog/
+  dev_url: https://github.com/HashPals/Name-That-Hash
   summary: The Modern Hash Identification System
   license: GPL-3.0-only
   license_file: LICENSE
-  description: |
-    Have you ever come across a hash such as 5f4dcc3b5aa765d61d8327deb882cf99
-     and wondered what type of hash that is? Name-that-hash will name that hash
-     type!
+  description: The Modern Hash Identification System
 
 extra:
   recipe-maintainers:
