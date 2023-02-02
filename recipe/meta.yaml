@@ -21,12 +21,12 @@ build:
 requirements:
   host:
     - pip
-    - poetry
-    - python >=3.6,<4.0
+    - poetry-core >=1.0.0
+    - python >=3.6.2,<4.0.0
   run:
-    - click >=7.1.2,<9.0.0
-    - python >=3.6,<4.0
-    - rich >=9.9,<11.0
+    - click >=7.1.2
+    - python >=3.6.2,<4.0.0
+    - rich >=11.0.0
 
 test:
   imports:
@@ -39,14 +39,12 @@ test:
     - pip
 
 about:
-  home: https://pypi.org/project/name-that-hash/
+  home: https://nth.skerritt.blog/
+  dev_url: https://github.com/HashPals/Name-That-Hash
   summary: The Modern Hash Identification System
   license: GPL-3.0-only
   license_file: LICENSE
-  description: |
-    Have you ever come across a hash such as 5f4dcc3b5aa765d61d8327deb882cf99
-     and wondered what type of hash that is? Name-that-hash will name that hash
-     type!
+  description: The Modern Hash Identification System
 
 extra:
   recipe-maintainers:
